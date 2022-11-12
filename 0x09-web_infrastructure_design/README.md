@@ -1,6 +1,6 @@
 # Web infrastructure design
 
-![web_structure](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fnetwork-infrastructure%2F&psig=AOvVaw3eLkI7OWXGP6vFxcgct7y5&ust=1668382566361000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCJD35MHnqfsCFQAAAAAdAAAAABAg)
+![web_structure](https://media.geeksforgeeks.org/wp-content/uploads/20220817182651/NetworkInfrastructure1.png)
 
 Web Applications Infrastructure/Web Infrastructure also called internet infrastructure is the physical hardware, transmission media, and software used to interconnect computers and users on the Internet.
 
