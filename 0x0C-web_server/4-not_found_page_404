@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# A bash script that installs nginx on an ubuntu machine.
+# This scripts also configures the default webpage served to be "Hello World!"
+# When request url matches /redirect_me, it redirects to my youtube channel.
+# When a page/file not found in the document root is requested, the 404.html
+# page is served to the client as stated with the error_page directive.
+
+sudo apt-get update -y
+
+sudo apt-get install nginx -y
+
+sudo echo "Hello World!" > /var/www/index.html
+
+sudo echo "Ceci n'est pas une page" > /var/www/404.html
+
+sudo echo -e "server {
+\tlisten 80 default_server;
+
+\tlisten [::]:80;
+
+\troot /var/www/html;
+
+\tindex index.html index.htm index.nginx-debian.html;
+
+\tserver_name _;
+
+\trewrite 
+
+\terror_page 404 404.html;
+\tlocation = /404.html {
+\t\tinternal;
+\t}
+}
+" > /etc/nginx/sites-available/default
+
+sudo service nginx reload
