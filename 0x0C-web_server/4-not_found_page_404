@@ -9,9 +9,9 @@ sudo apt-get update -y
 
 sudo apt-get install nginx -y
 
-sudo echo "Hello World!" > /var/www/index.html
+sudo echo "Hello World!" | /var/www/index.html
 
-sudo echo "Ceci n'est pas une page" > /var/www/404.html
+sudo echo "Ceci n'est pas une page" | /var/www/404.html
 
 NEW_RULE="\\\n\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com/@sammykingx;\n\t}\n"
 
