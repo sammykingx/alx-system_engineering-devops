@@ -7,7 +7,7 @@ sudo apt-get update -y
 
 sudo apt-get install nginx -y
 
-sudo echo "Hello World!" | /var/www/index.html
+echo "Hello World!" | sudo tee /var/www/index.html
 
 NEW_RULE="\\\n\tlocation = /redirect_me {\n\t\t return 301 https://www.youtube.com/@sammykingx;\n\t}\n"
 
