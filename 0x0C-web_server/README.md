@@ -73,5 +73,34 @@ $ shellcheck -V
 $ sudo apt-get install nginx -y
 
 ```
+## Configuring nginx
+```bash
 
-Updating with nginx conf commands
+# Configuring the default file
+
+$ sudo vi /etc/nginx/sites-available/default
+
+# Once the vi editior opens
+
+server {
+  listen 80 default_Server;
+  root /var/www/html;
+  index index.html index.htm index.nginx-debian.html;
+
+# if you have a domain name replace '_' with it
+  server_name _;
+
+# configuring error_page
+  error_pag 404 404.html;
+
+  location / {
+	try_files $uri $uri/ =404;
+  }
+
+  location = /404.html {
+	internal;
+  }
+}
+
+```
+
