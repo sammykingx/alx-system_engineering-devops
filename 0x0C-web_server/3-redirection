@@ -11,6 +11,8 @@ echo "Hello World!" | sudo tee /var/www/index.html > /dev/null
 
 NEW_RULE="\\\n\tlocation = /redirect_me {\n\t\t return 301 https://www.youtube.com/@sammykingx;\n\t}\n"
 
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bakup
+
 sudo sed -i "42i $NEW_RULE" /etc/nginx/sites-available/default
 
 sudo service nginx restart
