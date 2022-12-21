@@ -14,7 +14,7 @@ if [[ -z $FIND ]]; then
 fi
 
 # Create a firts index.html page
-echo "Holberton School" > /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
 
 # Add to the nginx configuration file a redirection to another page
 FIND=$(grep "redirect_me" /etc/nginx/sites-available/default)

@@ -21,3 +21,40 @@ For this project, you will need to write Bash scripts to automate your work. All
 - Your Bash script must pass `Shellcheck (version 0.3.7)` without any error
 - The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 - The second line of all your Bash scripts should be a comment explaining what is the script doing.
+
+## Installing HAProxy and configurinf HAProxy
+
+```bash
+
+$ sudo apt-get install -y haproxy=1.6.\*
+
+$ sudo vi /etc/haproxy/haproxy.cfg
+# Add the below code to the file opened using vi editor
+frontend sammykingx.tech
+        bind 0:80
+        default_backend web_servers
+
+backend web_servers
+        balance roundrobin
+        server 64820-web-01 100.26.152.157:80
+        server 64820-web-02 52.86.102.6:80
+~
+~
+:wq(to save and exit)
+--------------- or ----------------------- 
+$ echo '
+frontend sammykingx.tech
+        bind 0:80
+        default_backend web_servers
+
+backend web_servers
+        balance roundrobin
+        server 64820-web-01 100.26.152.157:80
+        server 64820-web-02 52.86.102.6:80
+' >> /etc/haproxy/haproxy.cfg
+
+$ service haproxy restart
+
+# git clone this repo on your terminal and run the file
+# 1-install_load_balancer to configure yours on a fly. 
+```
