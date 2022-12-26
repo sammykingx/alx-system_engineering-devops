@@ -22,7 +22,7 @@ For this project, you will need to write Bash scripts to automate your work. All
 - The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 - The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
-## Installing HAProxy and configurinf HAProxy
+## Installing HAProxy and configuring HAProxy
 
 ```bash
 
@@ -32,6 +32,7 @@ $ sudo vi /etc/haproxy/haproxy.cfg
 # Add the below code to the file opened using vi editor
 frontend sammykingx.tech
         bind 0:80
+	mode http
         default_backend web_servers
 
 backend web_servers
@@ -45,6 +46,7 @@ backend web_servers
 $ echo '
 frontend sammykingx.tech
         bind 0:80
+	mode http
         default_backend web_servers
 
 backend web_servers
@@ -56,5 +58,6 @@ backend web_servers
 $ service haproxy restart
 
 # git clone this repo on your terminal and run the file
-# 1-install_load_balancer to configure yours on a fly. 
+# install_haproxy_safely or 1-install_load_balancer to 
+# configure yours on a fly.
 ```
