@@ -29,6 +29,7 @@ Here we can see that after starting my Docker container, I curl the port 8080 ma
 - Puppet 3.8
 - Puppet-lint 2.1.1
 - Docker
+
 <!
 ### Try It On Your Machine :computer:
 ```bash
@@ -41,3 +42,16 @@ MUST SHOW REPLY FROM SERVER
 
 ```
 -->
+
+```bash
+# i realized that installing apache2 on my machine doesn't automatically starts
+# apache as in the case of nginx. as such i neede to start the apache web server
+# which actually gave me the expected results as apache is configured to listen
+# to port 80 by default.
+
+
+$ service apache2 start
+
+$ curl localhost
+
+```
