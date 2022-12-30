@@ -21,13 +21,27 @@ Using your debugging skills, find out what’s keeping your Ubuntu container’s
 | [1-debugging_made_short](./1-debugging_made_short)|
 
 ## Additional info :construction:
+
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be interpreted on `Ubuntu 20.04 LTS`
+- All your files should end with a new line
+- A __README.md file__ at the root of the folder of the project is mandatory
+- All your __Bash script files must be executable__
+- Your Bash __scripts must pass Shellcheck__ without any error
+- Your Bash scripts must run without error
+- The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
+- The second line of all your Bash scripts should be a comment explaining what is the script doing
+- You are not allowed to use `wget`
+
 ### Resources
 
-- emacs
 - BASH
 - Debian 9 stable / Ubuntu 16.04 / Ubuntu 18.04 
 - Shellcheck
 - Docker
+- Webstack debugging
+- Networking Basics
+
 <!
 ### Try It On Your Machine :computer:
 ```bash
