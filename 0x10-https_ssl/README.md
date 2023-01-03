@@ -7,7 +7,7 @@
 > HTTPS (Hyper Text Transfer Protocol Secure) appears in the URL when a website is secured by an SSL certificate. The details of the certificate, including the issuing authority and the corporate name of the website owner, can be viewed by clicking on the lock symbol on the browser bar.
 
 __What happens when you don’t secure your website traffic?__
-<img src='https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/276/xCmOCgw.gif'>
+<img src='https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/276/xCmOCgw.gif' style="float:right;">
 
 ## Prerequisites
 - What is `HTTPS`?
@@ -18,7 +18,7 @@ __What happens when you don’t secure your website traffic?__
 
 ## Tasks :heavy_check_mark:
 
-- [0-world_wide_web](./ 0-world_wide_web)
+- [0-world_wide_web](./0-world_wide_web)
 - [1-haproxy_ssl_termination](./1-haproxy_ssl_termination)
 - [100-redirect_http_to_https](./100-redirect_http_to_https)
 
