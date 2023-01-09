@@ -12,8 +12,6 @@ global
         ca-base /etc/ssl/certs
         crt-base /etc/ssl/private
 
-	tune.ssl.default-dh-param 2048	
-
         # Default ciphers to use on SSL-enabled listening sockets.
         # For more information, see ciphers(1SSL). This list is from:
         #  https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/
@@ -36,16 +34,19 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
+frontend ssl_443
+         bind *:443 ssl crt /etc/haproxy/cert/cert.pem
+         reqadd X-Forwarded-Proto:\ https
+         default_backend web_servers
 
 frontend sammykingx.tech
         bind 0:80
-        bind 0:443 ssl crt /etc/ssl/private/sammykingx.tech.pem
-        http-request redirect scheme https code 301 unless { ssl_fc }
-        option forwardfor
-        default_backend sammykingx.tech_backend
+        reqadd X-Forwarded-Proto:\ http
+        redirect scheme https code 301 if !{ ssl_fc }
+        default_backend web_servers
 
-backend sammykingx.tech_backend
+backend web_servers
         balance roundrobin
+        redirect scheme https if !{ ssl_fc }
         server 64820-web-01 100.26.152.157:80 check
         server 64820-web-02 52.86.102.6:80 check
-
