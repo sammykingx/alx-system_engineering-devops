@@ -21,6 +21,13 @@ Obviously writing Puppet code for your infrastructure requires an investment of 
 - Your Puppet manifests files must end with the extension __.pp__
 
 ## Installing puppet and puppet-lint on ubuntu
+
+### A video says it all
+__Watch the video below to get a full grasp about tackling the project__
+
+_Click the play video to watch video_ [Play video](https://youtu.be/YJyzEnXSsc8)
+
+### Commands on Terminal
 ```bash
 
 $ apt-get update && upgrade -y
@@ -36,3 +43,4 @@ $ sudo apt-get install -y puppet
 #installs puppet linter
 $ gem install puppet-lint
 ```
+__Follow the above instructions to install puppet and puppet-linter then watch the video to enable you understand how to get started with the task__
