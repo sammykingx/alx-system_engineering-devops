@@ -18,7 +18,9 @@ The __Uncomplicated firewall (UFW)__ in my ubuntu 22.04 LTS comes preinstalled b
 
 ### Watch step by step video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TokncsomwQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+__Watch the video on Youtube by clicking the "Play video"__
+
+[Play Video](https://youtu.be/TokncsomwQs)
 
 ### Code on Terminal
 
