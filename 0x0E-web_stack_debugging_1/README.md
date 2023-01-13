@@ -6,6 +6,10 @@ Challenge:
 
 Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80. Feel free to install whatever tool you need, start and destroy as many containers as you need to debug the issue.
 
+## A Video to explain it all
+__Watch the video to see how i was able to come up with the solutions to the task.__
+
+__Click the "watch video" to play video__ [__watch video__](https://youtu.be/Fx6ewkKQdU0)
 
 ## Tasks :heavy_check_mark:
 
@@ -42,8 +46,8 @@ Using your debugging skills, find out what’s keeping your Ubuntu container’s
 - Webstack debugging
 - Networking Basics
 
-<!
 ### Try It On Your Machine :computer:
+
 ```bash
 git clone https://github.com/sammykingx/alx-system_engineering-devops.git
 cd 0x0E-web_stack_debugging_1
@@ -52,4 +56,4 @@ curl 0:80
 cat -e FILENAME | wc -l
 curl 0:80
 ```
--->
+_Watch the video "[watch now](https://youtu.be/Fx6ewkKQdU0) to see how i did mine"_

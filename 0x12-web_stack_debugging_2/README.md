@@ -1,10 +1,16 @@
-0X12-Web_Stack_Debugging_2
+# 0X12-Web_Stack_Debugging_2
 
 ![](https://repository-images.githubusercontent.com/289166070/241e9b23-f69f-4bcc-b760-2ee745b9e098)
 
 > Debugging usually takes a big chunk of a software engineer’s time. The art of debugging is tough and it takes years, even decades to master, and that is why seasoned software engineers are the best at it… experience. They have seen lots of broken code, buggy systems, weird edge cases and race conditions.
 
 _The idea is to ask a set of questions until you find the issue_
+
+## A video to explain it all
+
+__Watch how i was able to come up with my solution for this task with the help of the video below__.
+
+Click the ["_watch video_"](https://youtu.be/Fx6ewkKQdU0) to watch video expalanation.
 
 ## Requirements
 
