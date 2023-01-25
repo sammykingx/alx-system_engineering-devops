@@ -58,6 +58,12 @@ __General__
 - You can’t use `systemctl` for restarting a process
 - A prior knowledge to bash scripting
 
+## Video Tutorial
+
+For stsep by step guide on how to go about the installation and configuration, you can click the __"watch video"__ link to get started
+
+- Proceed to video -> [Watch Video](https://youtu.be/5vy448hK-c4)
+
 ## Installing Needed Packages
 
 ```bash
@@ -91,7 +97,7 @@ server {
   server_name _;
 
 # configuring error_page
-  error_pag 404 404.html;
+  error_page 404 404.html;
 
   location / {
 	try_files $uri $uri/ =404;
