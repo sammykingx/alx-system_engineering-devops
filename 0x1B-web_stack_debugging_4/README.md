@@ -1,4 +1,4 @@
-# Web_stack_debugging_4O
+# Web_stack_debugging_4
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20190902105053/Debugging-Tips-To-Get-Better-At-It.png)
 
@@ -143,6 +143,7 @@ root@0a62aa706eb3:/#
 > The issue was the maximum number of file nginx can open which was 15 so i just had to increase the number to a high amount.
 
 ### Task 1
+- Resource [Read this](https://www.cyberciti.biz/faq/linux-unix-nginx-too-many-open-files/)
 
 ```bash
 
@@ -167,4 +168,7 @@ bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
 boot  etc  lib   media  opt  root  sbin  sys  usr
 holberton@94091d11a274:~$
 ```
-> The issue was the number of file the user `holberton` was allowed to open from as you notice from my terminal i opened the file `/etc/security/limits.conf` to increase the size and that was how iwas able to solve it.
+> The issue was the number of file the user `holberton` was allowed to open as you notice from my terminal i opened the file `/etc/security/limits.conf` to increase the size and that was how i was able to solve it.
+__Never forget debugging starts from the error gotten___
+
+Cheers.
